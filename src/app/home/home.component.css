@@ -1,0 +1,68 @@
+.banner
+{
+    background-image: url('../../assets/f.jpg');
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.content
+{
+    top: 30%;
+    /* bottom: 10%; */
+    left: 5%;
+    position: absolute;
+    color: white;
+}
+.content-bottom{
+    bottom: 10%;
+    left: 70%;
+    position: absolute;
+    color: white;
+}
+.btn-origin{
+    background: #586BA4;
+    color: white;
+}
+.bigtext{
+    font-size: 3rem;
+    width: 50%;
+}
+.hometextcontainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.smalltext{
+    /* font-size: 3rem; */
+    width: 40%;
+    color: gray;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        top: 20%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .content p{
+        /* width: 100%; */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .content button{
+        margin-top: 100px;
+    }
+    .content-bottom{
+        display: none;
+    }
+}
+@media screen and (min-width: 600px){
+    .content p{
+        width: 50%;
+       
+    }
+}
