@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { CircleComponent } from './circle/circle.component';
+import { SwipecaroComponent } from './component/swipecaro/swipecaro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    CircleComponent
+    CircleComponent,
+    SwipecaroComponent
   ],
   imports: [
     BrowserModule,

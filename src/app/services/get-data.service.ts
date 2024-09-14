@@ -64,7 +64,7 @@ export class GetDataService {
       pdPrice: 11499,
       pdCategory: "appliances",
       pdSubCategory: "mobile",
-      pdImg: "../../assets/images/productimg/samasungmobile.webp"
+      pdImg: "../../assets/a.jpg"
     },
     {
       pdId: 8566,
@@ -73,7 +73,7 @@ export class GetDataService {
       pdPrice: 79900,
       pdCategory: "appliances",
       pdSubCategory: "mobile",
-      pdImg: "../../assets/images/productimg/appleiphone15.webp"
+      pdImg: "../../assets/a.jpg"
     },
     {
       pdId: 8567,
@@ -82,7 +82,7 @@ export class GetDataService {
       pdPrice: 7450,
       pdCategory: "appliances",
       pdSubCategory: "air cooler",
-      pdImg: "../../assets/images/productimg/aircooler.webp"
+      pdImg: "../../assets/a.jpg"
     },
 
     {
@@ -92,7 +92,7 @@ export class GetDataService {
       pdPrice: 74000,
       pdCategory: "appliances",
       pdSubCategory: "smart tv",
-      pdImg: "../../assets/images/productimg/smartvsony.webp"
+      pdImg: "../../assets/i.jpg"
     },
     {
       pdId: 8569,

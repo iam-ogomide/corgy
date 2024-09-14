@@ -9,7 +9,10 @@
                     <p style=" font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto labore quaerat minima eius sit, nihil rem esse cupiditate. Asperiores, veniam!</p>
                 </div>
                 <!-- <a routerLink="/menu">ORDER NOW <i class="bi bi-arrow-right"></i></a> -->
-                <button type="button" class="btn btn-origin" routerLink="">ORDER NOW <i class="bi bi-arrow-right"></i></button>
+                <!-- <button type="button" class="btn btn-origin" routerLink="">ORDER NOW <i class="bi bi-arrow-right"></i></button> -->
+                 <div class="explore-btn">
+                    <a href="#" class="exp">Explore More</a>
+                </div>
             </div>
             <div class="content-bottom">
                 <p style="text-align: center; font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto labore quaerat minima eius sit, nihil rem esse cupiditate. Asperiores, veniam!</p>
@@ -28,10 +31,49 @@
                 <p class="smalltext">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro voluptates in? Architecto, voluptatum. Culpa, et!</p>
             </div>
 
-            <div class="">
-                hello world
+            <div class="col-lg-3 mt-5 product" *ngFor="let data of getApplianceProductData; index as i">
+                <a [routerLink]="['/product-detail',data.pdCategory,data.pdId]" class="productLink">
+                  <div class="product-grid" *ngIf="i<=3">
+                    <div>
+                      <img src={{data.pdImg}} alt="">
+                    </div>
+                    <h4 class="menutext">{{data.pdName}}</h4>
+                    <h4 class="pricetext">${{data.pdPrice}}</h4>
+                    <div >
+                        <img src="../../assets/star.png" style="width: 20px; height: 20px;" alt="">
+                        <img src="../../assets/star.png" style="width: 20px; height: 20px;" alt="">
+                        <img src="../../assets/star.png" style="width: 20px; height: 20px;" alt="">
+                        <img src="../../assets/star.png" style="width: 20px; height: 20px;" alt="">
+                        <img src="../../assets/star.png" style="width: 20px; height: 20px;" alt="">
+                    </div>
+                    
+                  </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-3 mb-3">
+        <div class="row">
+            
+            <div class="col-lg-4 col-12 mt-5" >
+                <h4 style="font-size: 1.5rem;font-weight: 700; margin-bottom: 15px;">Embrace Your Individuality with Our Curated Styles!</h4> 
+                <p style="color: gray; font-size: 14px;line-height: 1.5rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elieriores quo repudiandae accusantium enim distinctio minima laudantium neque sint.</p>
+                <h4 style="font-size: 1rem;font-weight: 700; margin-bottom: 15px;">Come and enjoy our winter sales</h4>
+                <h1 style="font-size: 5rem;font-weight: 700; margin-bottom: 15px;">50% OFF</h1>
+
+                <div class="explore-btn">
+                    <a href="#" class="exp">Explore More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-12 mt-5 joltImg" >
+                <img src="../../assets/g.jpg" alt="" >
             </div>
         </div>
     </div>
+
+    
 </div>
 
