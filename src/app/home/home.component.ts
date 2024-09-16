@@ -8,6 +8,7 @@ import { GetDataService } from '../services/get-data.service';
 })
 export class HomeComponent implements OnInit {
   getCategorisData: any;
+  getCollectionData: any;
   getApplianceProductData: any = [];
   getFashionProductData: any = [];
 
@@ -15,6 +16,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.getCategorisData = this.getData.categoriesData;
+    this.getCollectionData = this.getData.collectionData;
 
     this.getData.productData.filter((ele: any) => {
       if (ele.pdCategory == 'appliances') {

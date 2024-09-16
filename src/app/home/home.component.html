@@ -74,6 +74,54 @@
         </div>
     </div>
 
-    
+
+    <div class="container mt-5 mb-3">
+        <div class="row">
+            <p style="color: gray;">Collections</p>
+
+            <div class="hometextcontainer">
+                <p class="bigtext">Captivating Collection Curation</p>
+                <p class="smalltext">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro voluptates in? Architecto, voluptatum. Culpa, et!</p>
+            </div>
+
+            <div class="col-lg-3 mt-5 product" *ngFor="let data of getCollectionData; index as i">
+                <a [routerLink]="['/product-detail',data.pdCategory,data.pdId]" class="productLink">
+                  <div class="product-grid" *ngIf="i<=3">
+                    <div>
+                      <img src={{data.img}} alt="">
+                    </div>
+                    <h4 class="menutext">{{data.name}}</h4>   
+                  </div>
+                </a>
+            </div>
+
+            <div class="explore-btn">
+                <a href="#" class="exp">Collections <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <app-swipecaro></app-swipecaro> -->
+
+    <div class="container mt-5 mb-3">
+        <div class="row">
+            
+            <div class="col-lg-6 col-12 mt-5" style="align-content: center;">
+                <h4 style="font-size: 2.5rem;font-weight: 700; margin-bottom: 15px;">Packaging With A Touch Of Magic</h4> 
+                <p class="smalltext" style="width: 100%;">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro voluptates in? Architecto, voluptatum. Culpa, et!</p>
+
+                <div class="explore-btn">
+                    <a href="#" class="exp">Learn More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 mt-5 joltImg" >
+                <img src="../../assets/j4.jpg" alt="" >
+            </div>
+        </div>
+    </div>
+
+
 </div>
 

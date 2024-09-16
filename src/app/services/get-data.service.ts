@@ -54,6 +54,35 @@ export class GetDataService {
     },
   ];
 
+   // collection data 
+   collectionData = [
+    {
+      id: 1,
+      name: 'Fashion',
+      img: '../../assets/j1.jpg',
+      code: 'fashion',
+    },
+    {
+      id: 2,
+      name: 'Home & Furniture',
+      img: '../../assets/j3.jpg',
+      code: 'homeandfurniture',
+    },
+    {
+      id: 3,
+      name: 'Appliance',
+      img: '../../assets/j5.jpg',
+      code: 'appliances',
+    },
+    {
+      id: 4,
+      name: 'Toys',
+      img: '../../assets/t1.jpg',
+      code: 'toys',
+    },
+  ];
+
+
   // product details 
 
   productData = [
@@ -64,7 +93,7 @@ export class GetDataService {
       pdPrice: 11499,
       pdCategory: "appliances",
       pdSubCategory: "mobile",
-      pdImg: "../../assets/a.jpg"
+      pdImg: "../../assets/t1.jpg"
     },
     {
       pdId: 8566,
@@ -73,7 +102,7 @@ export class GetDataService {
       pdPrice: 79900,
       pdCategory: "appliances",
       pdSubCategory: "mobile",
-      pdImg: "../../assets/a.jpg"
+      pdImg: "../../assets/t2.jpg"
     },
     {
       pdId: 8567,
@@ -82,7 +111,7 @@ export class GetDataService {
       pdPrice: 7450,
       pdCategory: "appliances",
       pdSubCategory: "air cooler",
-      pdImg: "../../assets/a.jpg"
+      pdImg: "../../assets/t3.jpg"
     },
 
     {
@@ -92,7 +121,7 @@ export class GetDataService {
       pdPrice: 74000,
       pdCategory: "appliances",
       pdSubCategory: "smart tv",
-      pdImg: "../../assets/i.jpg"
+      pdImg: "../../assets/t4.jpg"
     },
     {
       pdId: 8569,

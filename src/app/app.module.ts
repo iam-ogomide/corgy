@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { CircleComponent } from './circle/circle.component';
 import { SwipecaroComponent } from './component/swipecaro/swipecaro.component';
+import { SwiperModule } from 'swiper/angular';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +17,13 @@ import { SwipecaroComponent } from './component/swipecaro/swipecaro.component';
     NavbarComponent,
     HomeComponent,
     CircleComponent,
-    SwipecaroComponent
+    SwipecaroComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
