@@ -58,25 +58,25 @@ export class GetDataService {
    collectionData = [
     {
       id: 1,
-      name: 'Fashion',
+      name: 'Celeste Wool',
       img: '../../assets/j1.jpg',
       code: 'fashion',
     },
     {
       id: 2,
-      name: 'Home & Furniture',
+      name: 'Cashmere-Blend',
       img: '../../assets/j3.jpg',
       code: 'homeandfurniture',
     },
     {
       id: 3,
-      name: 'Appliance',
+      name: 'Alpaca',
       img: '../../assets/j5.jpg',
       code: 'appliances',
     },
     {
       id: 4,
-      name: 'Toys',
+      name: 'Silk-Blend Bouclé',
       img: '../../assets/t1.jpg',
       code: 'toys',
     },
@@ -88,7 +88,7 @@ export class GetDataService {
   productData = [
     {
       pdId: 8565,
-      pdName: "SAMSUNG Galaxy F04 (Opal Green, 64 GB)",
+      pdName: "Checked Cashmere-Jacquard",
       pdDesc: "With the stunning features of the Samsung Galaxy F04 smartphone, discover what it means to have a flawless user experience",
       pdPrice: 11499,
       pdCategory: "appliances",
@@ -97,7 +97,7 @@ export class GetDataService {
     },
     {
       pdId: 8566,
-      pdName: "Apple iPhone 15 (Blue, 128 GB)",
+      pdName: "Distressed Cotton-Canvas Chore",
       pdDesc: "Experience the iPhone 15 – your dynamic companion. Dynamic Island ensures you stay connected, bubbling up alerts seamlessly while you're busy.",
       pdPrice: 79900,
       pdCategory: "appliances",
@@ -106,7 +106,7 @@ export class GetDataService {
     },
     {
       pdId: 8567,
-      pdName: "BAJAJ 36 L Room/Personal Air Cooler  (White, Platini Coolest - Torque PX 97)",
+      pdName: "Appliquéd Distressed Panelled",
       pdDesc: "Bajaj PX 97 torque is a durable, compact and portable room cooler that can be placed in offices as well in bedrooms for effective cooling, it is constructed from corrosion-free, engineered thermoplastic material",
       pdPrice: 7450,
       pdCategory: "appliances",
@@ -116,7 +116,7 @@ export class GetDataService {
 
     {
       pdId: 8568,
-      pdName: "SONY 125.7 cm (50 inch)",
+      pdName: "Asymmetric Cashmere-Jacquard",
       pdDesc: "You can enjoy the brilliant colours and explore new worlds in 4K resolution on this Sony Google TV. The powerful X1 4K processor brings every colour to life so that you can enjoy your favourite content.",
       pdPrice: 74000,
       pdCategory: "appliances",
@@ -125,7 +125,7 @@ export class GetDataService {
     },
     {
       pdId: 8569,
-      pdName: "SAMSUNG 256 L Frost Free Double Door 3 Star Convertible Refrigerator with Convertible, Digital Inverter with Display  (Luxe Black, RT30C3733BX/HL)",
+      pdName: "Appliquéd Ribbed Virgin Wool",
       pdDesc: "You can stock up on your weekly groceries and easily store them in the Samsung Refrigerator. Moreover, you can even store additional groceries and other food items in this refrigerator by converting the freezer into a fridge",
       pdPrice: 44990,
       pdCategory: "appliances",
@@ -134,7 +134,7 @@ export class GetDataService {
     },
     {
       pdId: 8570,
-      pdName: "Nokia 130 Music Dual Sim, Music Player, Wireless FM Radio and Dedicated Music Buttons",
+      pdName: "Appliquéd Merino Wool",
       pdDesc: "130 Music Dual Sim, Music Player, Wireless FM Radio and Dedicated Music Buttons",
       pdPrice: 2199,
       pdCategory: "appliances",
@@ -143,7 +143,7 @@ export class GetDataService {
     },
     {
       pdId: 8571,
-      pdName: "Men Solid Round Neck Pure Cotton Dark Green T-Shirt",
+      pdName: "Ribbed Linen and Wool-Blend",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 200,
       pdCategory: "fashion",
@@ -153,7 +153,7 @@ export class GetDataService {
     },
     {
       pdId: 8572,
-      pdName: "Men Printed Round Neck Cotton Blend Blue T-Shirt",
+      pdName: "Dlomu Wool",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 500,
       pdCategory: "fashion",
@@ -248,7 +248,7 @@ export class GetDataService {
     },
     {
       pdId: 8582,
-      pdName: "PP INFINITY Ford 12V Electric Ride On Car For Kids With Remote Control, Music Light 1-6 Yrs Car Battery Operated Ride On  (Black)",
+      pdName: "Oversized Double-Breasted Logo-Appliquéd Wool",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 25000,
       pdCategory: "toys",
@@ -257,7 +257,7 @@ export class GetDataService {
     },
     {
       pdId: 8583,
-      pdName: "BOZICA Wooden Educational Creative learning A To Z English Alphabets Board Puzzle  (27 Pieces)",
+      pdName: "DRKSHDW Cotton",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 700,
       pdCategory: "toys",
@@ -266,7 +266,7 @@ export class GetDataService {
     },
     {
       pdId: 8584,
-      pdName: "Aapaga Action Figure Super Heros Toy Set",
+      pdName: "Double-Breasted Wool-Tweed",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 500,
       pdCategory: "toys",

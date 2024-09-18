@@ -1,0 +1,36 @@
+<div class="container mt-3 mb-3">
+    <div class="row">
+
+        <div class="col-lg-8 col-12 mt-5 joltImg" style="display: flex; flex-direction: row;">
+            <img src={{getProductDetails.pdImg}} alt="">
+        </div>
+        
+        <div class="col-lg-4 col-12 mt-5" >
+            <h4 style="font-size: 1.5rem;font-weight: 700; margin-bottom: 15px;">{{getProductDetails.pdName}}</h4> 
+            <p style="color: gray; font-size: 14px;line-height: 1.5rem;">${{getProductDetails.pdPrice | number}} (Regular Price)</p>
+            <!-- <h4>Size: S  M  L  XL XXL</h4> -->
+             <div class="" style="display: flex; flex-direction: row; margin: 1rem 0;">
+                <p>Size:</p>
+                <div class="">
+                    <button type="button" class="btn btn-outline-dark btn-sm" style="margin:0 10px;">S</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin:0 10px;">M</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin:0 10px;">L</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin:0 10px;">XL</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" style="margin:0 10px;">XXL</button>
+                </div>
+             </div>
+            <h4 style="font-size: 1rem;font-weight: 700; margin-bottom: 15px;">Product Overview</h4>
+            <p style="color: gray; font-size: 14px;line-height: 1.5rem;">{{getProductDetails.pdDesc }}</p>
+            <p style="color: gray; font-size: 14px;line-height: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolore porro harum, ea praesentium laboriosam recusandae molestias eos! Magnam rem aut hic dolore exercitationem quibusdam quo culpa vero dicta? Voluptatum.</p>
+            <h4 style="font-size: 1rem;font-weight: 700; margin-bottom: 15px;">Delivery, Return & Exchange Policy</h4>
+            <p style="color: gray; font-size: 14px;line-height: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolore porro harum, ea praesentium laboriosam recusandae molestias eos! Magnam rem aut hic dolore exercitationem quibusdam quo culpa vero dicta? Voluptatum.</p>
+
+            <div class="explore-btn mt-5">
+                <a href="#" class="exp"><i class="bi bi-handbag"></i> Add to Bag</a>
+            </div>
+            <p style="color: gray; font-size: 14px;line-height: 1.5rem; margin-top: 1rem;"><i class="bi bi-truck"></i> Free delivery on orders over $30,000</p>
+        </div>
+
+        
+    </div>
+</div>

@@ -9,6 +9,8 @@ import { CircleComponent } from './circle/circle.component';
 import { SwipecaroComponent } from './component/swipecaro/swipecaro.component';
 import { SwiperModule } from 'swiper/angular';
 import { FooterComponent } from './footer/footer.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CollectionsComponent } from './collections/collections.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     CircleComponent,
     SwipecaroComponent,
-    FooterComponent
+    FooterComponent,
+    ProductDetailsComponent,
+    CollectionsComponent
   ],
   imports: [
     BrowserModule,
