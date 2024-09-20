@@ -130,7 +130,7 @@ export class GetDataService {
       pdPrice: 44990,
       pdCategory: "appliances",
       pdSubCategory: "refrigerator",
-      pdImg: "../../assets/images/productimg/refrigeratorsamsung.webp"
+      pdImg: "../../assets/j1.jpg"
     },
     {
       pdId: 8570,
@@ -139,7 +139,7 @@ export class GetDataService {
       pdPrice: 2199,
       pdCategory: "appliances",
       pdSubCategory: "mobile",
-      pdImg: "../../assets/images/productimg/nokiamobile.webp"
+      pdImg: "../../assets/j2.jpg"
     },
     {
       pdId: 8571,
@@ -148,8 +148,8 @@ export class GetDataService {
       pdPrice: 200,
       pdCategory: "fashion",
       pdSubCategory: "tshirt",
-      pdImg: "../../assets/images/productimg/men-fashion-2.webp",
-      pdSize: ["S", "M", "L", "XL"]
+      pdImg: "../../assets/j3.jpg",
+      
     },
     {
       pdId: 8572,
@@ -158,7 +158,7 @@ export class GetDataService {
       pdPrice: 500,
       pdCategory: "fashion",
       pdSubCategory: "tshirt",
-      pdImg: "../../assets/images/productimg/men-fashion-3.webp",
+      pdImg: "../../assets/n3.jpg",
       pdSize: ["S", "M", "L", "XL"]
 
     },
@@ -169,8 +169,8 @@ export class GetDataService {
       pdPrice: 800,
       pdCategory: "fashion",
       pdSubCategory: "tshirt",
-      pdImg: "../../assets/images/productimg/women-fashion-1.webp",
-      pdSize: ["S", "M", "L", "XL"]
+      pdImg: "../../assets/j7.jpg",
+
     },
     {
       pdId: 8574,
@@ -179,7 +179,7 @@ export class GetDataService {
       pdPrice: 550,
       pdCategory: "fashion",
       pdSubCategory: "jeans",
-      pdImg: "../../assets/images/productimg/men-fashion-jeans-1.webp",
+      pdImg: "../../assets/t5.jpg",
       pdSize: [30, 32, 34]
     },
     {
@@ -189,53 +189,53 @@ export class GetDataService {
       pdPrice: 1500,
       pdCategory: "fashion",
       pdSubCategory: "jeans",
-      pdImg: "../../assets/images/productimg/women-fashion-jeans-1.webp",
+      pdImg: "../../assets/t6.jpg",
       pdSize: [26, 28, 30, 32, 34]
     },
     {
       pdId: 8576,
-      pdName: "Cortina Polyester Striped Sofa Cover  (Brown / Drak Brown Pack of 1)",
+      pdName: "Cortina Polyester ",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 1500,
       pdCategory: "homeandfurniture",
       pdSubCategory: "cover",
-      pdImg: "../../assets/images/productimg/hnf-cover-1.webp",
+      pdImg: "../../assets/t7.jpg",
     },
     {
       pdId: 8577,
-      pdName: "Cortina Cotton Curtain for , Boho Curtain with Stainless Steel Rings Curtain Fabric  (Brown, 153 m)",
+      pdName: "Cortina Cotton ",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 2500,
       pdCategory: "homeandfurniture",
       pdSubCategory: "cover",
-      pdImg: "../../assets/images/productimg/hnf-curtain-2.webp",
+      pdImg: "../../assets/n6.jpg",
     },
     {
       pdId: 8578,
-      pdName: "Decorum 204 TC Microfiber Double Floral Flat Bedsheet  (Pack of 1, Green)",
+      pdName: "Double Floral Flat ",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 2500,
       pdCategory: "homeandfurniture",
       pdSubCategory: "cover",
-      pdImg: "../../assets/images/productimg/hnf-cover-2.webp",
+      pdImg: "../../assets/j6.jpg",
     },
     {
       pdId: 8579,
-      pdName: "Seventh Heaven Milan 3 Seater Sofa",
+      pdName: "Seventh Heaven ",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 15000,
       pdCategory: "homeandfurniture",
       pdSubCategory: "sofa",
-      pdImg: "../../assets/images/productimg/hnf-sofa-1.webp",
+      pdImg: "../../assets/j7.jpg",
     },
     {
       pdId: 8580,
-      pdName: "Allie Wood Solid Wood Study Table",
+      pdName: "Allie Wood",
       pdDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque placeat asperiores sint molestiae expedita facilis, illum voluptas optio amet cumque veniam itaque commodi vel incidunt sed deserunt, ea unde laudantium.",
       pdPrice: 10000,
       pdCategory: "homeandfurniture",
       pdSubCategory: "table",
-      pdImg: "../../assets/images/productimg/hnf-table-1.webp",
+      pdImg: "../../assets/z5.jpg",
     },
     {
       pdId: 8581,
@@ -244,7 +244,7 @@ export class GetDataService {
       pdPrice: 300,
       pdCategory: "toys",
       pdSubCategory: "cars",
-      pdImg: "../../assets/images/productimg/toy-1.webp",
+      pdImg: "../../assets/z4.jpg",
     },
     {
       pdId: 8582,
@@ -253,7 +253,7 @@ export class GetDataService {
       pdPrice: 25000,
       pdCategory: "toys",
       pdSubCategory: "cars",
-      pdImg: "../../assets/images/productimg/toy-2.webp",
+      pdImg: "../../assets/z3.jpg",
     },
     {
       pdId: 8583,
@@ -262,7 +262,7 @@ export class GetDataService {
       pdPrice: 700,
       pdCategory: "toys",
       pdSubCategory: "puzzle",
-      pdImg: "../../assets/images/productimg/toy-3.webp",
+      pdImg: "../../assets/z1.jpg",
     },
     {
       pdId: 8584,
@@ -271,7 +271,7 @@ export class GetDataService {
       pdPrice: 500,
       pdCategory: "toys",
       pdSubCategory: "toys",
-      pdImg: "../../assets/images/productimg/toy-4.webp",
+      pdImg: "../../assets/z2.jpg",
     },
   ];
 }
