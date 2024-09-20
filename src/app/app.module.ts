@@ -11,6 +11,9 @@ import { SwiperModule } from 'swiper/angular';
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CollectionsComponent } from './collections/collections.component';
+import { CartComponent } from './cart/cart.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { CollectionsComponent } from './collections/collections.component';
     SwipecaroComponent,
     FooterComponent,
     ProductDetailsComponent,
-    CollectionsComponent
+    CollectionsComponent,
+    CartComponent,
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

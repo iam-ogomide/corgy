@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DataStorageService } from '../services/data-storage.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private dataStorage:DataStorageService){}
+  
+  @Input() cartCount:number=0;
   ngOnInit(): void {
+    var getVal = this.dataStorage.getCartData();
+    this.cartCount = getVal ? getVal.length : 0;
   }
 
 }

@@ -15,15 +15,15 @@
             <a class="nav-link" routerLink="/collections">Collections</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" routerLink="/blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact us</a>
+            <a class="nav-link" routerLink="/contact">Contact us</a>
           </li>
         </ul>
         <div class="d-flex  align-items-center">
           <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-           <div class=""><i class="bi bi-shop"></i></div>
+           <div class="" routerLink="/cart" style="cursor: pointer;"><i class="bi bi-shop"></i><span class="cartCount"> {{cartCount}}</span></div>
            <img src="../../assets/naija.png" alt="" style="width: 25px; margin-left: 1rem;">
           <!-- <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item dropdown">

@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container mt-3 mb-3">
     <div class="row">
 
@@ -25,8 +26,9 @@
             <h4 style="font-size: 1rem;font-weight: 700; margin-bottom: 15px;">Delivery, Return & Exchange Policy</h4>
             <p style="color: gray; font-size: 14px;line-height: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolore porro harum, ea praesentium laboriosam recusandae molestias eos! Magnam rem aut hic dolore exercitationem quibusdam quo culpa vero dicta? Voluptatum.</p>
 
-            <div class="explore-btn mt-5">
-                <a href="#" class="exp"><i class="bi bi-handbag"></i> Add to Bag</a>
+            <div class="mt-5 mb-3">
+                <button *ngIf="!inCart" class="btn btn-md btn-warning" (click)="addCart(getProductDetails)">Add to Bag <i class="bi bi-bag"></i></button>
+                <a *ngIf="inCart" class="btn btn-md btn-warning" routerLink="/cart">Go to Cart <i class="bi bi-bag"></i></a>
             </div>
             <p style="color: gray; font-size: 14px;line-height: 1.5rem; margin-top: 1rem;"><i class="bi bi-truck"></i> Free delivery on orders over $30,000</p>
         </div>
