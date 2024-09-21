@@ -22,9 +22,9 @@
                         Remove</button>
 
                         <div class="mt-2 mb-2">
-                            <button class="btn btn-sm btn-dark" [disabled]="data.plusMinusCounter > 1 ? false :true" (click)="plusMinusCount(data,'minus')">-</button>
+                            <button class="btn btn-sm btn-dark" style="margin-right: 0.5rem;" [disabled]="data.plusMinusCounter > 1 ? false :true" (click)="plusMinusCount(data,'minus')">-</button>
                             <input type="number" class="col-lg-1" value="{{data.plusMinusCounter}}" disabled>
-                            <button class="btn btn-sm btn-dark" [disabled]="data.plusMinusCounter < 5 ? false :true " (click)="plusMinusCount(data,'plus')">+</button>   
+                            <button class="btn btn-sm btn-dark" style="margin-left: 0.5rem;" [disabled]="data.plusMinusCounter < 5 ? false :true " (click)="plusMinusCount(data,'plus')">+</button>   
                         </div>
 
 

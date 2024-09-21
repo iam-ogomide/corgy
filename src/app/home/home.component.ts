@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(private getData: GetDataService) {}
 
   ngOnInit(): void {
-    this.getCategorisData = this.getData.categoriesData;
+    
     this.getCollectionData = this.getData.collectionData;
 
     this.getData.productData.filter((ele: any) => {

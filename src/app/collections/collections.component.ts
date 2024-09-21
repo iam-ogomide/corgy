@@ -13,7 +13,19 @@ export class CollectionsComponent implements OnInit {
   constructor(private getData: GetDataService) {}
 
   ngOnInit(): void {
-    this.getMenuData = this.getData.productData
+    this.getMenuData = this.getData.productData;
+    
+  }
+  filteredProducts = this.getData.productData;
+  categories = Array.from(new Set(this.getData.productData.map(p => p.pdCategory)));
+  filterByCategory(event: Event) {
+    const selectElement = event.target as HTMLSelectElement;
+    const category = selectElement.value;
+    if (category) {
+      this.filteredProducts = this.getData.productData.filter(product => product.pdCategory === category);
+    } else {
+      this.filteredProducts = this.getData.productData; // Show all if no category selected
+    }
   }
 
 }

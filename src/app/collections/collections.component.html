@@ -1,23 +1,37 @@
 <app-navbar></app-navbar>
 
 <div class="container mt-5 mb-3">
-    <div class="row">
+  <div class="row">
 
-        <div class="hometextcontainer">
-            <p class="bigtext">Our Collection</p>
-            <p class="smalltext">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro voluptates in? Architecto, voluptatum. Culpa, et!</p>
+    <div class="hometextcontainer">
+      <p class="bigtext">Our Collection</p>
+      <p class="smalltext">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro
+        voluptates in? Architecto, voluptatum. Culpa, et!</p>
+    </div>
+
+
+    <div class="container">
+      <label for="category-select" class="mb-3">Select a Category:</label>
+    <select id="category-select" (change)="filterByCategory($event)" class="form-select" aria-label="Default select example">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+    </div>
+
+    <div class="col-lg-3 mt-5 product" *ngFor="let data of filteredProducts">
+      <a [routerLink]="['/product-detail',data.pdCategory,data.pdId]" class="productLink">
+        <div class="product-grid">
+          <div>
+            <img src={{data.pdImg}} alt="">
+          </div>
+          <h4 class="menutext">{{data.pdName}}</h4>
+          <h4 class="pricetext">${{data.pdPrice}}</h4>
+          <div>
+            <img src="../../assets/star.png" style="width: 80px; height: 20px;" alt="">
+          </div>
+
         </div>
-
-        <div class="col-lg-3 mt-5 product" *ngFor="let data of getMenuData">
-            <a [routerLink]="['/product-detail',data.pdCategory,data.pdId]" class="productLink">
-              <div class="product-grid" >
-                <div>
-                  <img src={{data.pdImg}} alt="">
-                </div>
-                <h4 class="menutext">{{data.pdName}}</h4>
-                <h4 class="pricetext">${{data.pdPrice}}</h4>
-                <div >
-                    <img src="../../assets/star.png" style="width: 80px; height: 20px;" alt=""> 
-                </div>
-                
-              </div>
+      </a>
+    </div>
+  </div>
+</div>
