@@ -2,10 +2,10 @@
 <div class="">
 
     <div class="">
-        <div class="banner">
-            <div class="content">
-                <h1 class="mb-3">Simmer Winter Collection <br> At your door</h1>
-                <div class="">
+        <div class="banner" data-aos="fade-up" data-aos-easing="ease-in-out">
+            <div class="content" >
+                <h1 class="mb-3" data-aos="fade-up" data-aos-easing="ease-in-out">Simmer Winter Collection <br> At your door</h1>
+                <div class=""  data-aos="fade-up" data-aos-easing="ease-in-out">
                     <p style=" font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto labore quaerat minima eius sit, nihil rem esse cupiditate. Asperiores, veniam!</p>
                 </div>
                 <!-- <a routerLink="/menu">ORDER NOW <i class="bi bi-arrow-right"></i></a> -->
@@ -14,7 +14,7 @@
                     <a href="#" class="exp" routerLink="/collections">Explore More</a>
                 </div>
             </div>
-            <div class="content-bottom">
+            <div class="content-bottom" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <p style="text-align: center; font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto labore quaerat minima eius sit, nihil rem esse cupiditate. Asperiores, veniam!</p>
             </div>
         </div>
@@ -24,14 +24,14 @@
 
     <div class="container mt-5 mb-3">
         <div class="row">
-            <p style="color: gray;">NEW ARRIVALS</p>
+            <p style="color: gray;" data-aos="fade-up" data-aos-easing="ease-in-out">NEW ARRIVALS</p>
 
-            <div class="hometextcontainer">
+            <div class="hometextcontainer" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <p class="bigtext">Be the First to Shop Our New Arrivals</p>
                 <p class="smalltext">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro voluptates in? Architecto, voluptatum. Culpa, et!</p>
             </div>
 
-            <div class="col-lg-3 mt-5 product" *ngFor="let data of getApplianceProductData; index as i">
+            <div class="col-lg-3 mt-5 product" *ngFor="let data of getApplianceProductData; index as i" data-aos="zoom-in" data-aos-easing="ease-in-out">
                 <a [routerLink]="['/product-detail',data.pdCategory,data.pdId]" class="productLink">
                   <div class="product-grid" *ngIf="i<=3">
                     <div>
@@ -57,7 +57,7 @@
     <div class="container mt-3 mb-3">
         <div class="row">
             
-            <div class="col-lg-4 col-12 mt-5" >
+            <div class="col-lg-4 col-12 mt-5" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <h4 style="font-size: 1.5rem;font-weight: 700; margin-bottom: 15px;">Embrace Your Individuality with Our Curated Styles!</h4> 
                 <p style="color: gray; font-size: 14px;line-height: 1.5rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elieriores quo repudiandae accusantium enim distinctio minima laudantium neque sint.</p>
                 <h4 style="font-size: 1rem;font-weight: 700; margin-bottom: 15px;">Come and enjoy our winter sales</h4>
@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-8 col-12 mt-5 joltImg" >
+            <div class="col-lg-8 col-12 mt-5 joltImg" data-aos="zoom-in" data-aos-easing="ease-in-out">
                 <img src="../../assets/g.jpg" alt="" >
             </div>
         </div>
@@ -77,14 +77,14 @@
 
     <div class="container mt-5 mb-3">
         <div class="row">
-            <p style="color: gray;">Collections</p>
+            <p style="color: gray;" data-aos="fade-up" data-aos-easing="ease-in-out">Collections</p>
 
-            <div class="hometextcontainer">
+            <div class="hometextcontainer" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <p class="bigtext">Captivating Collection Curation</p>
                 <p class="smalltext">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro voluptates in? Architecto, voluptatum. Culpa, et!</p>
             </div>
 
-            <div class="col-lg-3 mt-5 product" *ngFor="let data of getCollectionData; index as i">
+            <div class="col-lg-3 mt-5 product" *ngFor="let data of getCollectionData; index as i" data-aos="zoom-in" data-aos-easing="ease-in-out">
                 <a [routerLink]="['/product-detail',data.pdCategory,data.pdId]" class="productLink">
                   <div class="product-grid" *ngIf="i<=3">
                     <div>
@@ -107,7 +107,7 @@
     <div class="container mt-5 mb-3">
         <div class="row">
             
-            <div class="col-lg-6 col-12 mt-5" style="align-content: center;">
+            <div class="col-lg-6 col-12 mt-5" style="align-content: center;" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <h4 style="font-size: 2.5rem;font-weight: 700; margin-bottom: 15px;">Packaging With A Touch Of Magic</h4> 
                 <p class="smalltext" style="width: 100%;">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro voluptates in? Architecto, voluptatum. Culpa, et!</p>
                 <p class="smalltext" style="width: 100%;">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro voluptates in? Architecto, voluptatum. Culpa, et!</p>
@@ -117,7 +117,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 col-12 mt-5 joltImg" >
+            <div class="col-lg-6 col-12 mt-5 joltImg" data-aos="zoom-in" data-aos-easing="ease-in-out">
                 <img src="../../assets/j4.jpg" alt="" >
             </div>
         </div>

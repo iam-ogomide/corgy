@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataStorageService } from '../services/data-storage.service';
 import { GetDataService } from '../services/get-data.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-product-details',
@@ -18,6 +19,9 @@ export class ProductDetailsComponent implements OnInit {
   storeCartData:any=[];
   inCart:boolean=false;
   ngOnInit(): void {
+    AOS.init({
+      // Offset from the original trigger point
+});
       this.getParamValue = this.route.snapshot.paramMap.get('id');
 
       var getVal = this.dataStorage.getCartData()

@@ -7,6 +7,14 @@ export class GetDataService {
 
   constructor() { }
 
+  // subcategory data .
+
+ 
+
+
+  // category data 
+  
+
    // collection data 
    collectionData = [
     {

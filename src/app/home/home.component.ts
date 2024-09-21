@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetDataService } from '../services/get-data.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -15,14 +16,17 @@ export class HomeComponent implements OnInit {
   constructor(private getData: GetDataService) {}
 
   ngOnInit(): void {
+    AOS.init({
+          // Offset from the original trigger point
+    });
     
     this.getCollectionData = this.getData.collectionData;
 
     this.getData.productData.filter((ele: any) => {
-      if (ele.pdCategory == 'appliances') {
+      if (ele.pdCategory == 'Celeste Wool') {
         this.getApplianceProductData.push(ele);
       }
-      if (ele.pdCategory == 'fashion') {
+      if (ele.pdCategory == 'Cashmere-Blend') {
         this.getFashionProductData.push(ele);
       }
     });

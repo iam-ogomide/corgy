@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataStorageService } from '../services/data-storage.service';
 import { Router } from '@angular/router';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-cart',
@@ -17,6 +18,9 @@ export class CartComponent implements OnInit {
   totalCart: number = 0;
 
   ngOnInit(): void {
+    AOS.init({
+      // Offset from the original trigger point
+});
     this.getCartData = this.dataStorage.getCartData();
     this.totalCart =  this.getCartData ? this.getCartData.length : 0;
     if(this.getCartData)

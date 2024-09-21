@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-contact',
@@ -14,6 +15,9 @@ export class ContactComponent implements OnInit {
 
   toggleSec(): void {
     alert("Form Submitted Successfully")
+    AOS.init({
+      // Offset from the original trigger point
+});
   }
 
 
