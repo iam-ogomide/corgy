@@ -1,1 +1,48 @@
-<p>blog works!</p>
+<app-navbar></app-navbar>
+
+<div class="">
+
+    <div class="">
+        <div class="banner mt-5">
+            <div class="content">
+                <p style=" font-size: 14px;">Mide the Enginee. &copy; 21 September, 2024</p>
+                <h1 class="mb-3">Elegance is in Simplicity</h1>
+                <div class="">
+                    <p style=" font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto labore quaerat minima eius sit, nihil rem esse cupiditate. Asperiores, veniam!</p>
+                </div>
+                <!-- <a routerLink="/menu">ORDER NOW <i class="bi bi-arrow-right"></i></a> -->
+                <!-- <button type="button" class="btn btn-origin" routerLink="">ORDER NOW <i class="bi bi-arrow-right"></i></button> -->
+                 <div class="explore-btn">
+                    <a href="#" class="exp" routerLink="/collections">Explore More</a>
+                </div>
+            </div>
+           
+        </div>
+        
+        
+    </div>
+    
+    <div class="container mt-5 mb-3">
+        <p class="bigtext">Where Innovation Meets Elegance</p>
+        <p class="smalltext">Lorem ipemporibus aliquid vitae culpa, quaerat eveniet! Officia sapiente tempora porro voluptates in? Architecto, voluptatum. Culpa, et!</p>
+        <p class="smalltext" style="width: 75%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, numquam voluptatem aliquam consequuntur cumque accusamus iusto reprehenderit ex veritatis sequi eum at, quidem molestias temporibus aut? Nam maiores rem ab!</p>
+    </div>
+
+    
+
+    <div class="container mt-5 mb-3 arc">
+        <div class="arc" *ngFor="let section of accordionData; let i = index">
+            <div class="arc-central" (click)="toggleSection(i)">
+                <h3 class="bigtext" style="font-weight: normal;font-size: 1.5rem;">
+                    {{ section.title }}
+                  </h3>
+                  <i class="bi bi-box-arrow-in-down-right" ></i>
+            </div>
+            
+            <div *ngIf="activeIndex === i">
+              <p>{{ section.content }}</p>
+            </div>
+            
+          </div>
+    </div>
+</div>

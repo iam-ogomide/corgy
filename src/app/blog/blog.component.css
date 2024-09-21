@@ -1,0 +1,55 @@
+.smalltext{
+    /* font-size: 3rem; */
+    /* width: 40%; */
+    color: gray;
+    font-size: 14px;
+}
+.bigtext{
+    font-size: 2rem;
+    /* width: 50%; */
+}
+.banner
+{
+    background-image: url('../../assets/z2.jpg');
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.content
+{
+    top: 65%;
+    /* bottom: 10%; */
+    left: 5%;
+    position: absolute;
+    color: white;
+}
+
+.exp{
+    display: inline-block;
+    font-size: 1rem;
+    background: #586BA4;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+.exp:hover{
+    letter-spacing: 6px;
+}
+
+  
+.arc {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.arc-central{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+  
