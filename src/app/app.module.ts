@@ -14,6 +14,7 @@ import { CollectionsComponent } from './collections/collections.component';
 import { CartComponent } from './cart/cart.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { Ng5SliderModule } from 'ng5-slider';
 
 
 @NgModule({
@@ -28,12 +29,14 @@ import { ContactComponent } from './contact/contact.component';
     CollectionsComponent,
     CartComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    Ng5SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

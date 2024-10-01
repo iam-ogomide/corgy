@@ -1,7 +1,42 @@
 <app-navbar></app-navbar>
+<button class="toggle-btn mt-5" (click)="toggleSidebar()">☰</button>
 
 <div class="container mt-5 mb-3">
-  <div class="row">
+
+
+  <!-- Sidebar Section -->
+  <div class="sidebar" [class.active]="isSidebarVisible">
+    <!-- Toggle Button Inside Sidebar -->
+    <!-- <button class="toggle-btn" (click)="toggleSidebar()">☰</button> -->
+    <h3>Filter by Category (Dropdown)</h3>
+    <select (change)="filterByCategory($event)">
+      <option value="">All Categories</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+
+    <div>
+      <input type="checkbox" [checked]="allCategoriesSelected" (change)="onSelectAllCategories($event)">
+      <label>All Categories</label>
+    </div>
+
+    <!-- Individual Category Checkboxes -->
+    <div *ngFor="let category of categories">
+      <input type="checkbox" [value]="category" [checked]="selectedCheckboxCategories.includes(category)"
+        (change)="onCategoryCheckboxChange($event)">
+      <label>{{ category }}</label>
+    </div>
+
+    <!-- Price Range Slider -->
+    <h3>Filter by Price</h3>
+    <div>
+      <ng5-slider style="color: purple" [(value)]="minPrice" [(highValue)]="maxPrice" [options]="priceSliderOptions"
+      (valueChange)="onPriceChange()" (highValueChange)="onPriceChange()"></ng5-slider>
+    </div>
+
+  </div>
+
+
+  <div class="row main-content">
 
     <div class="hometextcontainer" data-aos="fade-up" data-aos-easing="ease-in-out">
       <p class="bigtext">Our Collection</p>
@@ -10,15 +45,16 @@
     </div>
 
 
-    <div class="container" data-aos="fade-up" data-aos-easing="ease-in-out">
+    <!-- <div class="container" data-aos="fade-up" data-aos-easing="ease-in-out">
       <label for="category-select" class="mb-3">Select a Category:</label>
     <select id="category-select" (change)="filterByCategory($event)" class="form-select" aria-label="Default select example">
       <option value="">All Categories</option>
       <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
     </select>
-    </div>
+    </div> -->
 
-    <div class="col-lg-3 mt-5 product" *ngFor="let data of filteredProducts" data-aos="zoom-in" data-aos-easing="ease-in-out">
+    <div class="col-lg-3 mt-5 product" *ngFor="let data of filteredProducts" data-aos="zoom-in"
+      data-aos-easing="ease-in-out">
       <a [routerLink]="['/product-detail',data.pdCategory,data.pdId]" class="productLink">
         <div class="product-grid">
           <div>
