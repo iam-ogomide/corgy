@@ -1,29 +1,95 @@
-# Grip
+# Corgy
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+A front-end e-commerce web app built with Angular. It showcases a product catalog with category filtering, a product detail view, a shopping cart, a blog section, and a contact page — with scroll animations and a swipeable carousel on the home page.
 
-## Development server
+**Live demo:** [corgy-iota.vercel.app](https://corgy-iota.vercel.app)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Home page** — hero banner and a "new arrivals" carousel (via a custom swipe carousel component)
+- **Collections** — product listing with category filtering (dropdown + checkbox filters) and a price range slider (`ng5-slider`)
+- **Product details** — individual product view reached via `/product-detail/:name/:id`
+- **Cart** — add/update/remove items, with quantity and total calculated client-side; cart contents persist in the browser via `localStorage`
+- **Blog** and **Contact** pages
+- Scroll-triggered animations throughout, powered by [AOS](https://michalsnik.github.io/aos/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech stack
 
-## Build
+- [Angular 13](https://angular.io/) (CLI-generated project)
+- [RxJS](https://rxjs.dev/)
+- [AOS](https://michalsnik.github.io/aos/) for scroll animations
+- Bootstrap (via CDN/classes) for layout and components
+- Karma + Jasmine for unit tests
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Project structure
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+src/app/
+├── home/                # Landing page (banner + new arrivals)
+├── collections/         # Product listing with filters
+├── product-details/     # Single product view
+├── cart/                 # Shopping cart
+├── blog/                 # Blog page
+├── contact/               # Contact page
+├── navbar/, footer/      # Shared layout components
+├── component/swipecaro/  # Home page carousel
+└── services/
+    ├── get-data.service.ts        # /collection data
+    └── data-storage.service.ts    # Cart persistence (localStorage)
+```
 
-## Running end-to-end tests
+## Getting started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Prerequisites
 
-## Further help
+- [Node.js](https://nodejs.org/) (compatible with Angular 13, e.g. Node 14–16)
+- [Angular CLI](https://angular.io/cli) v13.3.11: `npm install -g @angular/cli@13.3.11`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# corgy" 
-"# grip-corgy-complete-" 
+### Installation
+
+```bash
+git clone https://github.com/OGOMIDEEE/corgy.git
+cd corgy
+npm install
+```
+
+### Development server
+
+```bash
+ng serve
+```
+
+Navigate to `http://localhost:4200/`. The app reloads automatically when you edit source files.
+
+### Build
+
+```bash
+ng build
+```
+
+Build artifacts are output to the `dist/` directory.
+
+### Running unit tests
+
+```bash
+ng test
+```
+
+Runs unit tests via [Karma](https://karma-runner.github.io).
+
+## Routes
+
+| Path | Component |
+|---|---|
+| `/` | Home |
+| `/collections` | Collections |
+| `/product-detail/:name/:id` | Product Details |
+| `/cart` | Cart |
+| `/blog` | Blog |
+| `/contact` | Contact |
+
+
+- Replace static product/collection arrays with a real backend or headless CMS
+- Sync cart to a backend/account instead of `localStorage` only
+- Add checkout flow
